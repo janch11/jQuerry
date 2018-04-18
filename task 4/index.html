@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zadanie 3. Efekty specjalne (animacje)</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Author" content="Łukasz Krawczyk (Web Developer / Graphic &amp; Web Designer)"/>
+    <style> li ul {
+        display: none;
+    }
+
+    ul {
+        width: fit-content;
+        background: yellow
+    }
+
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>Pozycja 1</li>
+    <li>Pozycja 2
+        <ul>
+            <li>Podpozycja 2a</li>
+            <li>Podpozycja 2b</li>
+            <li>Podpozycja 2c</li>
+        </ul>
+    </li>
+    <li>Pozycja 3</li>
+        <ul>
+            <li>Podpozycja 3a</li>
+            <li>Podpozycja 3b</li>
+            <li>Podpozycja c</li>
+        </ul>
+    <li>Pozycja 4</li>
+</ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+    /* Dana jest strona z menu 2-poziomowym (podmenu pojawia się pod pozycją drugą).
+
+    Przetestuj działanie metod animacji:
+    a) z predefiniowanym parametrem 'fast'
+    b) z predefiniowanym parametrem 'medium'
+    c) z predefiniowanym parametrem 'slow'
+    d) bez żadnych parametrów */
+
+    $(function () {
+        // a)
+        $("li").click(function () {
+            $(this).children().fadeToggle()
+
+        })
+
+        // b)
+
+
+        // c)
+
+
+        // d)
+
+    });
+</script>
+
+</body>
+</html>
